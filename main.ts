@@ -32,7 +32,7 @@ let action = ""
 let yValue = 0
 let xValue = 0
 comment.comment("CHANGE THE RADIO GROUP TO YOUR TEAM'S JOYSTICK NUMBER")
-radio.setGroup(28)
+radio.setGroup(47)
 basic.showIcon(IconNames.Yes)
 basic.showString("R")
 basic.forever(function () {
@@ -54,10 +54,12 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "D") {
         comment.comment("Insert D-Button Action Between These Comments")
+        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 60)
         comment.comment("Insert D-Button Action Between These Comments")
         action = "Z"
     } else if (action == "E") {
         comment.comment("Insert E-Button Action Between These Comments")
+        wuKong.setServoAngle(wuKong.ServoTypeList._360, wuKong.ServoList.S0, 0)
         comment.comment("Insert E-Button Action Between These Comments")
         action = "Z"
     } else if (action == "F") {
